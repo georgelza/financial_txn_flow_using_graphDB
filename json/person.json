@@ -1,0 +1,127 @@
+// Bank 1
+{
+    "idNumber": "000721",
+    "accountEntityId": "BSAOOAJJ-427570489",
+    "accountEntityType": "corporate",
+    "tenantId": "BSAOOAJJ",
+    "fullName": "Guy Miles",
+    "dob": "21/07/2000", 
+    "reg_id": "1284/0001/2002"
+}
+
+{
+    "accountEntityId": "BSAOOAJJ-427570489",
+    "accountEntityType": "corporate",
+    "tenantId": "BSAOOAJJ",
+    "fullName": "Martin Sweenie",
+    "dob": "30/04/1996",
+    "reg_id": "1284/0001/2002"
+}
+
+{
+    "accountEntityId": "BSAOOAJJ-427570486",
+    "accountEntityType": "individual",
+    "tenantId": "BSAOOAJJ",
+    "fullName": "Tempo Martin",
+    "dob": "14/05/1998"
+}
+
+{
+    "accountEntityId": "BSAOOAJJ-427570488",
+    "accountEntityType": "individual",
+    "tenantId": "BSAOOAJJ",
+    "fullName": "Alex Human",
+    "dob": "10/05/1992"
+}
+
+{
+    "accountEntityId": "BSAOOAJJ-427571488",
+    "accountEntityType": "individual",
+    "tenantId": "BSAOOAJJ",
+    "fullName": "Tempo Martin",
+    "dob": "27/02/1996"
+}
+
+
+// Bank 2
+{
+    "accountEntityId": "BSAO2AJJ-327570486",
+    "accountEntityType": "individual",
+    "tenantId": "BSAO2AJJ",
+    "fullName": "Quitin Kitze",
+    "dob": "22/07/2000"
+}
+
+{
+    "accountEntityId": "BSAO2AJJ-427570488",
+    "accountEntityType": "individual",
+    "tenantId": "BSAO2AJJ",
+    "fullName": "Tracy Martins",
+    "dob": "15/02/2006"
+}
+
+{
+    "accountEntityId": "BSAO2AJJ-527570498",
+    "accountEntityType": "individual",
+    "tenantId": "BSAO2AJJ",
+    "fullName": "Oliver Miles",
+    "dob": "05/01/2005"
+}
+
+{
+    "accountEntityId": "BSAO2AJJ-724570489",
+    "accountEntityType": "individual",
+    "tenantId": "BSAO2AJJ",
+    "fullName": "Sara Muller",
+    "dob": "28/11/2002"
+}
+
+// Bank 3
+{
+    "accountEntityId": "SBZAZAJJ-51052432413",
+    "accountEntityType": "individual",
+    "tenantId": "SBZAZAJJ",
+    "fullName": "Andrew Muller",
+    "dob": "26/08/1978"
+}
+
+{
+    "accountEntityId": "SBZAZAJJ-51052432423",
+    "accountEntityType": "corporate",
+    "tenantId": "SBZAZAJJ",
+    "fullName": "Kevin Pretorius",
+    "dob": "20/02/1945",
+    "reg_id": "2097/0201/1985"
+}
+
+{
+    "accountEntityId": "SBZAZAJJ-51052432503",
+    "accountEntityType": "individual",
+    "tenantId": "SBZAZAJJ",
+    "fullName": "Ben o Bruyan",
+    "dob": "10/09/1960"
+}
+
+{
+    "accountEntityId": "SBZAZAJJ-51062432403",
+    "accountEntityType": "individual",
+    "tenantId": "SBZAZAJJ",
+    "fullName": "Karen Henwood",
+    "dob": "24/12/1965"
+}
+
+{
+    "accountEntityId": "SBZAZAJJ-52052432403",
+    "accountEntityType": "individual",
+    "tenantId": "SBZAZAJJ",
+    "fullName": "John Doe",
+    "dob": "13/03/1988"
+}
+
+{
+    "accountEntityId": "SBZAZAJJ-54052432403",
+    "accountEntityType": "individual",
+    "tenantId": "SBZAZAJJ",
+    "fullName": "Mary Spencer",
+    "dob": "14/10/1998"
+}
