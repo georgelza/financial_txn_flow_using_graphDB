@@ -44,7 +44,7 @@ Create basic edges:
 
 ### Phase 3
 
-    Figure out how to introduce temporal concepts between transactions, linking one to next in a chain, also allowing n+1 to reference n.
+Figure out how to introduce temporal concepts between transactions, linking one to next in a chain, also allowing n+1 to reference n.
 
 
 ### Kafka Connect Sinks
