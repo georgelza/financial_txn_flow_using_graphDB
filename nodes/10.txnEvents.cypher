@@ -2,6 +2,7 @@
 // Outbound
 MERGE (n:Transactions {eventId: "9265405743564350480"})
 ON CREATE SET n = {
+    eventId: "9265405743564350480",
     accountEntityId: "BSAOOAJJ-427570486",
     counterpartyEntityId: "BSAOOAJJ-427570487",
     transactionID: "2299405743564352934",
@@ -12,8 +13,8 @@ ON CREATE SET n = {
     localInstrument: "PBAC",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "RPP",
-    paymentMethod: "TRF"
-
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 // Inbound
@@ -30,8 +31,8 @@ ON CREATE SET n = {
     localInstrument: "PBAC",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "RPP",
-    paymentMethod: "TRF"
-
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 
@@ -51,8 +52,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
-
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 // Inbound
@@ -69,7 +70,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 
@@ -89,7 +91,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 // Inbound
@@ -106,7 +109,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 
@@ -126,7 +130,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 // Inbound
@@ -143,7 +148,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 
@@ -163,7 +169,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 // Inbound
@@ -180,7 +187,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 
@@ -200,7 +208,8 @@ ON CREATE SET n = {
     localInstrument: "PBAC",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "RPP",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 // Inbound
@@ -217,7 +226,8 @@ ON CREATE SET n = {
     localInstrument: "PBAC",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "RPP",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 
@@ -237,7 +247,8 @@ ON CREATE SET n = {
     localInstrument: "PBAC",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "RPP",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 // Inbound
@@ -254,7 +265,8 @@ ON CREATE SET n = {
     localInstrument: "PBAC",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "RPP",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 
@@ -274,7 +286,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 // Inbound
@@ -291,7 +304,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 
@@ -311,7 +325,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 // Inbound
@@ -328,7 +343,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 
@@ -348,7 +364,8 @@ ON CREATE SET n = {
     localInstrument: "PBAC",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "RPP",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 // Inbound
@@ -365,7 +382,8 @@ ON CREATE SET n = {
     localInstrument: "PBAC",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "RPP",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 
@@ -385,7 +403,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 // Inbound
@@ -402,7 +421,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 
@@ -422,7 +442,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 // Inbound
@@ -439,7 +460,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 
@@ -459,7 +481,8 @@ ON CREATE SET n = {
     localInstrument: "PBAC",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "RPP",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 // Inbound
@@ -476,7 +499,8 @@ ON CREATE SET n = {
     localInstrument: "PBAC",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "RPP",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 
@@ -496,7 +520,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 // Inbound
@@ -513,7 +538,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 
@@ -533,7 +559,8 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;
 // Inbound
@@ -550,6 +577,7 @@ ON CREATE SET n = {
     localInstrument: "10",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "EFT",
-    paymentMethod: "TRF"
+    paymentMethod: "TRF",
+    overallScore: "no-risk"
 }
 RETURN n;

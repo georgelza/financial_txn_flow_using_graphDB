@@ -37,19 +37,25 @@ Create basic edges:
   - Person -> Mobile Numbers
   - Person -> Landline Numbers
   - Corporate -> Landline Numbers
-  - 
-  - Account -> ob Transactions
-  - ob Transaction -> Account
-  - Txn -> Txn
+  
+  - outbound
+    - (ob Account) -> [Paid_Funds_To] -> (ob Transactions) ob Txn represented as a node
+    - (ob Transaction) -> [Paid_Funds_To] ->  (ib Account)
+  - inbound
+    - (ib Account) -> [Received_Funds_To] -> (ib Transactions) ib Txn represented as a node
+    - (ib Transaction) -> [Received_Funds_To] ->  (ib Account)
+
+  - (ob Txn) -> [Same_Transaction] -> (ib Txn)  This is based on same ob_txn.transactionId = ib_txn.transactionId and ob_txn.direction = "outbound" and ib_txn.direction = "inbound"  (otherwise we might link it to itself).
+
 
 ### Phase 3
 
-Figure out how to introduce temporal concepts between transactions, linking one to next in a chain, also allowing n+1 to reference n.
+Figure out how to introduce temporal concepts between Account Events (for now it will be on inbound and outbound transactions only), linking one to next in a chain, think link list, also allowing n+1 to reference. Basically creating a time travel chain of events for the account.
 
 
 ### Kafka Connect Sinks
 
-Time To add...
+Time To add... 
 
 
 ### To run
@@ -75,6 +81,14 @@ Time To add...
 - [temporal-connected-components-with-neo4j](https://github.com/halftermeyer/temporal-connected-components-with-neo4j/tree/main)
 
 - [Theoretical Computer Science: Temporally connected components](https://www.sciencedirect.com/science/article/pii/S0304397524003748)
+
+
+### NOTE (overallScore):
+
+- "review"          if an alert was generated for this entity/event combination; 
+- "risk-no-review"  if this entity/event combination triggered an automated decline/denial of the transaction;
+- "no-risk"         if the entity/event combination did not trigger an alert or an automatic decline.
+
 
 ### Cypher Example (with Markdown enabled via the VSCode Cypher add in)
 
