@@ -93,7 +93,7 @@ Time To add...
 - [Theoretical Computer Science: Temporally connected components](https://www.sciencedirect.com/science/article/pii/S0304397524003748)
 
 
-### NOTE (overallScore):
+### NOTE (riskStatus):
 
 - "review"          if an alert was generated for this entity/event combination; 
 - "risk-no-review"  if this entity/event combination triggered an automated decline/denial of the transaction;
