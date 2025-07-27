@@ -24,6 +24,16 @@ Define Nodes:
     - Inbound
     - Outbound
 
+### Data Products needed
+
+1. Banks provide (if individual) accountEntityId => idNumber
+2. Banks provide (if corporate) accountEntityId => regId
+3. CIPC provide regId => Company Owners/idNumbers
+4. DOHA idNumber => Personal records, name, surname, sex, dob, ...
+
+5. Possible (stretching wishes), Mobile Telco's Operators provide idNumber => mobiledevice_number
+6. Reported Fraud provide know offenders and known victim idNumbers.
+
 
 ### Phase 2
 
