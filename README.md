@@ -41,14 +41,16 @@ Create basic edges:
   - Person -> Landline Numbers
   - Corporate -> Landline Numbers
   - Address -> Person
-  - Addreess -> Corporate
+  - Address -> Corporate
   - Country -> Continent
-  - Country -> Classification
+  - Country -> Classification's
+  - Address -> Country
 
   
   - outbound
     - (ob Account) -> [Paid_Funds_To] -> (ob Transactions) ob Txn represented as a node
     - (ob Transaction) -> [Paid_Funds_To] ->  (ib Account)
+
   - inbound
     - (ib Account) -> [Received_Funds_To] -> (ib Transactions) ib Txn represented as a node
     - (ib Transaction) -> [Received_Funds_To] ->  (ib Account)
@@ -56,7 +58,7 @@ Create basic edges:
   - (ob Txn) -> [Same_Transaction] -> (ib Txn)  This is based on same ob_txn.transactionId = ib_txn.transactionId and ob_txn.direction = "outbound" and ib_txn.direction = "inbound"  (otherwise we might link it to itself).
 
 
-### Additional Data Products needed
+### Additional Data Products required
 
 1. Banks provide (if individual) accountEntityId => idNumber
 2. Banks provide (if corporate) accountEntityId => regId
