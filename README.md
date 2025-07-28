@@ -23,16 +23,9 @@ Define Nodes:
   - Transactions
     - Inbound
     - Outbound
-
-### Data Products needed
-
-1. Banks provide (if individual) accountEntityId => idNumber
-2. Banks provide (if corporate) accountEntityId => regId
-3. CIPC provide regId => Company Owners/idNumbers
-4. DOHA idNumber => Personal records, name, surname, sex, dob, ...
-
-5. Possible (stretching wishes), Mobile Telco's Operators provide idNumber => mobiledevice_number
-6. Reported Fraud provide know offenders and known victim idNumbers.
+  - continents
+  - classifications
+  - countries
 
 
 ### Phase 2
@@ -49,6 +42,8 @@ Create basic edges:
   - Corporate -> Landline Numbers
   - Address -> Person
   - Addreess -> Corporate
+  - Country -> continent
+  - 
 
   
   - outbound
@@ -59,6 +54,17 @@ Create basic edges:
     - (ib Transaction) -> [Received_Funds_To] ->  (ib Account)
 
   - (ob Txn) -> [Same_Transaction] -> (ib Txn)  This is based on same ob_txn.transactionId = ib_txn.transactionId and ob_txn.direction = "outbound" and ib_txn.direction = "inbound"  (otherwise we might link it to itself).
+
+
+### Additional Data Products needed
+
+1. Banks provide (if individual) accountEntityId => idNumber
+2. Banks provide (if corporate) accountEntityId => regId
+3. CIPC provide regId => Company Owners/idNumbers
+4. DOHA idNumber => Personal records, name, surname, sex, dob, ...
+
+5. Possible (stretching wishes), Mobile Telco's Operators provide idNumber => mobiledevice_number
+6. Reported Fraud provide know offenders and known victim idNumbers.
 
 
 ### Phase 3
