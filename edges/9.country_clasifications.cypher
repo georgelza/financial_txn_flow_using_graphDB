@@ -27,3 +27,9 @@ MATCH (country:Country)
 MATCH (block:DevelopmentGroup)
 WHERE country.dg_code = block.code
 MERGE (country)-[:DEVELOPMENT_GROUP_MEMBER_OF]->(block);
+
+// Map Address to Country
+MATCH (address:Address)
+MATCH (country:Country)
+WHERE address.countryCode = country.countryCode
+MERGE (address)-[:LOCATED_IN]->(country);

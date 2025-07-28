@@ -42,8 +42,8 @@ Create basic edges:
   - Corporate -> Landline Numbers
   - Address -> Person
   - Addreess -> Corporate
-  - Country -> continent
-  - 
+  - Country -> Continent
+  - Country -> Classification
 
   
   - outbound
