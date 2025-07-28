@@ -10,6 +10,6 @@ Execute Order:
 - 6.countries_*.cypher
 - 7.mobile_device.cypher
 - 8.landline_number.cypher
-- -> Next execute the edges/* then return here.
 - 9.address.cypher
+- -> Next execute the edges/* then return here. This will create our primary wire framework of all parties and basic relationships.
 - 10.txnEvents.cypher

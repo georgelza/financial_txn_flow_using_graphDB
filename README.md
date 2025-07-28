@@ -19,7 +19,7 @@ Define Nodes:
     - Oceana
   - Mobile Devices
   - Landline Numbers
-  - Addresses
+  - Address
   - Transactions
     - Inbound
     - Outbound
@@ -47,6 +47,9 @@ Create basic edges:
   - Person -> Mobile Numbers
   - Person -> Landline Numbers
   - Corporate -> Landline Numbers
+  - Address -> Person
+  - Addreess -> Corporate
+
   
   - outbound
     - (ob Account) -> [Paid_Funds_To] -> (ob Transactions) ob Txn represented as a node
@@ -93,12 +96,13 @@ Time To add...
 - [Theoretical Computer Science: Temporally connected components](https://www.sciencedirect.com/science/article/pii/S0304397524003748)
 
 
-### NOTE (riskStatus):
+### NOTE (riskStatus & overallScore):
 
 - "review"          if an alert was generated for this entity/event combination; 
 - "risk-no-review"  if this entity/event combination triggered an automated decline/denial of the transaction;
 - "no-risk"         if the entity/event combination did not trigger an alert or an automatic decline.
 
+The overall risk score for this event/entity combination. This is formatted in scientific notation if the value is below 0.001.
 
 ### Cypher Example (with Markdown enabled via the VSCode Cypher add in)
 
