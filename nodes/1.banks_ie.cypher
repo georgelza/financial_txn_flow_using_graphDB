@@ -32,11 +32,24 @@ ON CREATE SET n = {
     branchStart: 410000, 
     branchEnd: 419999, 
     mnemonic: "ACC",
-    acg: "universal" 
+    acg: "universal",
+    swift_code:  "BOFIIE2D"
 }
 ON MATCH SET n += {
+    accountAgentId: "BOFIIE2D",
     memberName: "Bank of Ireland plc", 
     displayName: "Bank of Ireland",
+    bicfi: "BOFIIE2D", 
+    memberNo: "210001", 
+    sponsoredBy: "210001", 
+    eft: true, 
+    rpp: false, 
+    rtc: true, 
+    ac: true, 
+    branchStart: 410000, 
+    branchEnd: 419999, 
+    mnemonic: "ACC",
+    acg: "universal",
     swift_code:  "BOFIIE2D"
 }
 RETURN n;
@@ -57,11 +70,24 @@ ON CREATE SET n = {
     branchStart: 420000, 
     branchEnd: 429999, 
     mnemonic: "ACC",
-    acg: "universal" 
+    acg: "universal",
+    swift_code:  "AIBKIE2D"
 }
 ON MATCH SET n += {
+    accountAgentId: "AIBKIE2D",
     memberName: "Allied Irish Banks plc", 
     displayName: "AIB",
+    bicfi: "AIBKIE2D", 
+    memberNo: "210002", 
+    sponsoredBy: "210002", 
+    eft: true, 
+    rpp: false, 
+    rtc: true, 
+    ac: true, 
+    branchStart: 420000, 
+    branchEnd: 429999, 
+    mnemonic: "ACC",
+    acg: "universal",
     swift_code:  "AIBKIE2D"
 }
 RETURN n;
@@ -83,11 +109,24 @@ ON CREATE SET n = {
     branchStart: 430000, 
     branchEnd: 439999, 
     mnemonic: "ACC",
-    acg: "universal"
+    acg: "universal",
+    swift_code:  "IPTSIEDD"
 }
 ON MATCH SET n += {
+    accountAgentId: "IPTSIEDD",
     memberName: "Permanent TSB plc", 
-    displayName: "Permanent TSB",
+    displayName: "PTSB",
+    bicfi: "IPTSIEDD", 
+    memberNo: "210003", 
+    sponsoredBy: "210002", 
+    eft: true, 
+    rpp: false, 
+    rtc: true, 
+    ac: true, 
+    branchStart: 430000, 
+    branchEnd: 439999, 
+    mnemonic: "ACC",
+    acg: "universal",
     swift_code:  "IPTSIEDD"
 }
 RETURN n;
@@ -98,9 +137,7 @@ ON CREATE SET n = {
     tenantId: "ULSBIE2D",
     accountAgentId: "ULSBIE2D",
     memberName: "Ulster Bank Ireland DAC",
-    displayName: "UBI"
-}
-ON MATCH SET n += {
+    displayName: "UBI",
     bicfi: "ULSBIE2D", 
     memberNo: "210004", 
     sponsoredBy: "210004", 
@@ -112,11 +149,23 @@ ON MATCH SET n += {
     branchEnd: 449999, 
     mnemonic: "ACC",
     acg: "universal",
+    swift_code:  "ULSBIE2D"
+}
+ON MATCH SET n += {
+    accountAgentId: "ULSBIE2D",
     memberName: "Ulster Bank Ireland DAC",
     displayName: "UBI",
+    bicfi: "ULSBIE2D", 
+    memberNo: "210004", 
+    sponsoredBy: "210004", 
+    eft: true, 
+    rpp: false, 
+    rtc: true, 
+    ac: true, 
+    branchStart: 440000, 
+    branchEnd: 449999, 
+    mnemonic: "ACC",
+    acg: "universal",
     swift_code:  "ULSBIE2D"
 }
 RETURN n;
-
-
-

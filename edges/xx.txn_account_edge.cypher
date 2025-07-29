@@ -7,7 +7,7 @@ WHERE acc.accountEntityId = txn.accountEntityId and acc.direction = "outbound"
 MERGE (acc)-[:OUTBOUND_TXN]->(ob);
 
 // Create (AccountEvents) -> ["INBOUND_TXN"] -> (Account) relationships edges
-MATCH (acc:accountEntityId)
 MATCH (txn:AccountEvents)
+MATCH (acc:accountEntityId)
 WHERE txn.counterpartyEntityId = acc.accountEntityId and acc.direction = "inbound"
 MERGE (ob)-[:INBOUND_TXN]->(txn);

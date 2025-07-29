@@ -6,10 +6,19 @@
 Define Nodes:
 
   - Banks
-  - Account
-  - AccountHolder
+  - Accounts
+  - AccountHolders
   - Person
   - Corporate
+  - Mobile Devices
+  - Landline Numbers
+  - Address
+
+  - AccountEvents
+    - Inbound
+    - Outbound
+
+  - continents
   - Countries
     - Africa
     - Asia
@@ -17,36 +26,28 @@ Define Nodes:
     - North America
     - South America
     - Oceana
-  - Mobile Devices
-  - Landline Numbers
-  - Address
-  - AccountEvents
-    - Inbound
-    - Outbound
-  - continents
   - classifications
-  - countries
-
 
 ### Phase 2
 
 Create basic edges:
 
-  - Bank -> Account
-  - Account -> AccountHolder
-  - AccountHolder -> Corporate
-    - Corporate -> Person
-  - AccountHolder -> Person
-  - Person -> Mobile Numbers
-  - Person -> Landline Numbers
-  - Corporate -> Landline Numbers
-  - Address -> Person
-  - Address -> Corporate
-  - Country -> Continent
-  - Country -> Classification's
-  - Address -> Country
+  - Bank ->           Account
+  - Account ->        AccountHolder
+  - AccountHolder ->  Corporate
+    - Corporate ->    Person
+  - AccountHolder ->  Person
+  - Person ->         Mobile Numbers
+  - Person ->         Landline Numbers
+  - Corporate ->      Landline Numbers
+  - Address ->        Person
+  - Address ->        Corporate
+  - Country ->        Continent
+  - Country ->        Classification's
+  - Address ->        Country
 
-  
+  Account Events -> NOT IMPLIMENTED AT THE MOMENT.
+
   - outbound
     - (ob Account) -> [Paid_Funds_To] -> (ob AccountEvents) ob Txn represented as a node
     - (ob Transaction) -> [Paid_Funds_To] ->  (ib Account)
@@ -62,8 +63,8 @@ Create basic edges:
 
 1. Banks provide (if individual) accountEntityId => pps
 2. Banks provide (if corporate) accountEntityId => regId
-3. CIPC provide regId => Company Owners/ppss
-4. DOHA pps => Personal records, name, surname, sex, dob, ...
+3. National Business Registry provide regId => Company Owners/ppss
+4. National Department of Home Affairs/Home Office provide pps => Personal records, name, surname, sex, dob, ...
 
 5. Possible (stretching wishes), Mobile Telco's Operators provide pps => mobiledevice_number
 6. Reported Fraud provide know offenders and known victim ppss.
@@ -103,14 +104,6 @@ Time To add...
 
 - [Theoretical Computer Science: Temporally connected components](https://www.sciencedirect.com/science/article/pii/S0304397524003748)
 
-
-### NOTE (riskStatus & overallScore):
-
-- "review"          if an alert was generated for this entity/event combination; 
-- "risk-no-review"  if this entity/event combination triggered an automated decline/denial of the transaction;
-- "no-risk"         if the entity/event combination did not trigger an alert or an automatic decline.
-
-The overall risk score for this event/entity combination. This is formatted in scientific notation if the value is below 0.001.
 
 ### Cypher Example (with Markdown enabled via the VSCode Cypher add in)
 
