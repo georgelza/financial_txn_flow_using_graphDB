@@ -2,9 +2,9 @@
 
 // Bank 1
 // Setting a value to null removes the tag.
-MERGE (n:Person {idNumber: "980512"})
+MERGE (n:Person {pps: "1234567A"})
 ON CREATE SET n = {
-    idNumber: "980512",
+    pps: "1234567A",
     fullName: "Tempo Martin"}
 ON MATCH SET n += {
     dob: "1998/05/12",
@@ -12,9 +12,9 @@ ON MATCH SET n += {
 }
 RETURN n;
 
-MERGE (n:Person { idNumber: "890721"})
+MERGE (n:Person { pps: "2847639B"})
 ON CREATE SET n = {
-    idNumber: "890721",
+    pps: "2847639B",
     fullName: "Tony Stewart"
 }
 ON MATCH SET n+= {
@@ -24,9 +24,9 @@ ON MATCH SET n+= {
 RETURN n;
 
 
-MERGE (n:Person { idNumber: "840721"})
+MERGE (n:Person { pps: "3519274C"})
 ON CREATE SET n = {
-    idNumber: "840721",
+    pps: "3519274C",
     fullName: "Martin Maree",
     dob: "1984/07/21"
 }
@@ -37,9 +37,9 @@ RETURN n;
 
 // Corporate
 // AeroMat
-MERGE (n:Person { idNumber: "000721"})
+MERGE (n:Person { pps: "4682851D"})
 ON CREATE SET n = {
-    idNumber: "000721",
+    pps: "4682851D",
     fullName: "Guy Miles",
     dob: "2000/07/21", 
     regId: "1978/0001/1022"
@@ -51,9 +51,9 @@ RETURN n;
 
 // Corporate
 // AeroMat
-MERGE (n:Person {idNumber: "980430"})
+MERGE (n:Person {pps: "5746392E"})
 ON CREATE SET n = {
-    idNumber: "980430",
+    pps: "5746392E",
     fullName: "Martin Sweenie",
     dob: "1998/04/30",
     regId: "1978/0001/1022"
@@ -63,9 +63,9 @@ ON MATCH SET n += {
 }
 RETURN n;
 
-MERGE (n:Person {idNumber: "920510"})
+MERGE (n:Person {pps: "6283947F"})
 ON CREATE SET n = {
-    idNumber: "920510",
+    pps: "6283947F",
     fullName: "Alex Human",
     dob: "1992/05/10"
 }
@@ -74,9 +74,9 @@ ON MATCH SET n += {
 }
 RETURN n;
 
-MERGE (n:Person {idNumber: "780826"})
+MERGE (n:Person {pps: "7395168G"})
 ON CREATE SET n = {
-    idNumber: "780826",
+    pps: "7395168G",
     fullName: "Andrew Muller",
     dob: "1978/08/26"
 }
@@ -85,9 +85,9 @@ ON MATCH SET n += {
 }
 RETURN n;
 
-MERGE (n:Person {idNumber: "450220"})
+MERGE (n:Person {pps: "8461725H"})
 ON CREATE SET n = {
-    idNumber: "450220",
+    pps: "8461725H",
     fullName: "Kevin Pretorius",
     dob: "1945/02/20",
     regId: "2011/0201/1185"
@@ -97,9 +97,9 @@ ON MATCH SET n += {
 }
 RETURN n;
 
-MERGE (n:Person {idNumber: "450916"})
+MERGE (n:Person {pps: "8461725H"})
 ON CREATE SET n = {
-    idNumber: "450916",
+    pps: "8461725H",
     fullName: "Ben o Bruyan",
     dob: "1945/09/16",
     regId: "2011/0201/1185"
@@ -109,9 +109,9 @@ ON MATCH SET n += {
 }
 RETURN n;
 
-MERGE (n:Person {idNumber: "721224"})
+MERGE (n:Person {pps: "9572840J"})
 ON CREATE SET n = {
-    idNumber: "721224",
+    pps: "9572840J",
     fullName: "Karen Henwood",
     regId: "2011/0201/1185",
     dob: "1972/12/24"

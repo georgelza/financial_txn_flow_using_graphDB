@@ -1,41 +1,41 @@
 // Bank 1
-MERGE (n:AccountHolder {accountEntityId: "BSAOOAJJ-437570486"})
+MERGE (n:AccountHolder {accountEntityId: "ULSBIE2D-437570486"})
 ON CREATE SET n = {
-    accountEntityId: "BSAOOAJJ-437570486",
+    accountEntityId: "ULSBIE2D-437570486",
     accountEntityType: "individual",
-    idNumber: "721224"
+    pps: "9572840J"
     }
 RETURN n;
 
-MERGE (n:AccountHolder {accountEntityId: "BSAOOAJJ-427570486"})
+MERGE (n:AccountHolder {accountEntityId: "ULSBIE2D-427570486"})
 ON CREATE SET n = {
-    accountEntityId: "BSAOOAJJ-427570486",
+    accountEntityId: "ULSBIE2D-427570486",
     accountEntityType: "individual",
-    idNumber: "980512"
+    pps: "1234567A"
 }
 RETURN n;                                                                                              
 
-MERGE (n:AccountHolder {accountEntityId: "BSAOOAJJ-427570487"})
+MERGE (n:AccountHolder {accountEntityId: "ULSBIE2D-427570487"})
 ON CREATE SET n = {
-    accountEntityId: "BSAOOAJJ-427570487",
+    accountEntityId: "ULSBIE2D-427570487",
     accountEntityType: "individual",
-    idNumber: "890721"
+    pps: "2847639B"
 }
 RETURN n;
 
-MERGE (n:AccountHolder {accountEntityId: "BSAOOAJJ-427570488"})
+MERGE (n:AccountHolder {accountEntityId: "ULSBIE2D-427570488"})
 ON CREATE SET n = {
-    accountEntityId: "BSAOOAJJ-427570488",
+    accountEntityId: "ULSBIE2D-427570488",
     accountEntityType: "individual",
-    idNumber: "840721"
+    pps: "3519274C"
 }
 RETURN n;
 
 // Corporate
 // AeroMat
-MERGE (n:AccountHolder {accountEntityId: "BSAOOAJJ-427570489"})
+MERGE (n:AccountHolder {accountEntityId: "ULSBIE2D-427570489"})
 ON CREATE SET n = {
-    accountEntityId: "BSAOOAJJ-427570489",
+    accountEntityId: "ULSBIE2D-427570489",
     accountEntityType: "corporate",
     regId: "1978/0001/1022"
 }
@@ -43,73 +43,73 @@ RETURN n;
 
 
 // Bank 2
-MERGE (n:AccountHolder {accountEntityId: "BSAO2AJJ-427570488"})
+MERGE (n:AccountHolder {accountEntityId: "IPTSIEDD-427570488"})
 ON CREATE SET n = {
-    accountEntityId: "BSAO2AJJ-427570488",
+    accountEntityId: "IPTSIEDD-427570488",
     accountEntityType: "individual",
-    idNumber: "980430"
+    pps: "5746392E"
 }
 RETURN n;
 
 
-MERGE (n:AccountHolder {accountEntityId: "BSAO2AJJ-527570498"})
+MERGE (n:AccountHolder {accountEntityId: "IPTSIEDD-527570498"})
 ON CREATE SET n = {
-    accountEntityId: "BSAO2AJJ-527570498",
+    accountEntityId: "IPTSIEDD-527570498",
     accountEntityType: "individual",
-    idNumber: "920510"
+    pps: "6283947F"
 }
 RETURN n;
 
 
-MERGE (n:AccountHolder {accountEntityId: "BSAO2AJJ-724570489"})
+MERGE (n:AccountHolder {accountEntityId: "IPTSIEDD-724570489"})
 ON CREATE SET n = {
-    accountEntityId: "BSAO2AJJ-724570489",
+    accountEntityId: "IPTSIEDD-724570489",
     accountEntityType: "individual",
-    idNumber: "920510"
+    pps: "6283947F"
 }
 RETURN n;
 
 
 // Bank 3
-MERGE (n:AccountHolder {accountEntityId: "SBZAZAJJ-51052432413"})
+MERGE (n:AccountHolder {accountEntityId: "BOFIIE2D-51052432413"})
 ON CREATE SET n = {
-    accountEntityId: "SBZAZAJJ-51052432413",
+    accountEntityId: "BOFIIE2D-51052432413",
     accountEntityType: "individual",
-    idNumber: "920510"
+    pps: "6283947F"
 }
 RETURN n;
 
-MERGE (n:AccountHolder {accountEntityId: "SBZAZAJJ-51052432503"})
+MERGE (n:AccountHolder {accountEntityId: "BOFIIE2D-51052432503"})
 ON CREATE SET n = {
-    accountEntityId: "SBZAZAJJ-51052432503",
+    accountEntityId: "BOFIIE2D-51052432503",
     accountEntityType: "individual",
-    idNumber: "780826"
-}
-RETURN n;
-
-
-MERGE (n:AccountHolder {accountEntityId: "SBZAZAJJ-51062432403"})
-ON CREATE SET n = {
-    accountEntityId: "SBZAZAJJ-51062432403",
-    accountEntityType: "individual",
-    idNumber: "450220"
+    pps: "7395168G"
 }
 RETURN n;
 
 
-MERGE (n:AccountHolder {accountEntityId: "SBZAZAJJ-52052432403"})
+MERGE (n:AccountHolder {accountEntityId: "BOFIIE2D-51062432403"})
 ON CREATE SET n = {
-    accountEntityId: "SBZAZAJJ-52052432403",
+    accountEntityId: "BOFIIE2D-51062432403",
     accountEntityType: "individual",
-    idNumber: "450916"
+    pps: "8461725H"
+}
+RETURN n;
+
+
+MERGE (n:AccountHolder {accountEntityId: "BOFIIE2D-52052432403"})
+ON CREATE SET n = {
+    accountEntityId: "BOFIIE2D-52052432403",
+    accountEntityType: "individual",
+    pps: "8461725H"
 }
 RETURN n;
 
 // Corporate
 // Alu Engineerings
-MERGE (n:AccountHolder {accountEntityId: "SBZAZAJJ-51052432423"})
+MERGE (n:AccountHolder {accountEntityId: "BOFIIE2D-51052432423"})
 ON CREATE SET n = {
-    accountEntityId: "SBZAZAJJ-51052432423",
+    accountEntityId: "BOFIIE2D-51052432423",
     accountEntityType: "corporate",
     regId: "2011/0201/1185"
 }

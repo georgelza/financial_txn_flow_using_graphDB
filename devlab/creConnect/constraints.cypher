@@ -7,9 +7,9 @@ CREATE CONSTRAINT acc_node_accountEntityId_uidx IF NOT EXISTS
 FOR (a:Account) 
 REQUIRE a.accountEntityId IS UNIQUE;
 
-CREATE CONSTRAINT person_node_idNumber_uidx IF NOT EXISTS
+CREATE CONSTRAINT person_node_pps_uidx IF NOT EXISTS
 FOR (a:Person) 
-REQUIRE a.idNumber IS UNIQUE;
+REQUIRE a.pps IS UNIQUE;
 
 CREATE CONSTRAINT corp_node_RegId_uidx IF NOT EXISTS
 FOR (a:Corporate) 

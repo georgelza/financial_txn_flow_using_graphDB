@@ -1,7 +1,7 @@
 // where they share the same transactionID
 
-// Create (Transactions) -> ["SAME"] -> (Transactions) relationships edges
-MATCH (ib:Transactions)
-MATCH (ob:Transactions)
+// Create (AccountEvents) -> ["SAME"] -> (AccountEvents) relationships edges
+MATCH (ib:AccountEvents)
+MATCH (ob:AccountEvents)
 WHERE ib.transactionID = ob.transactionID
 MERGE (ib)-[:SAME]->(ob);

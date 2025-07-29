@@ -1,15 +1,15 @@
-// where they share the same idNumber
+// where they share the same pps
 
 // Create (Person) -> ["HAVE_LANDLINE_NUMBER"] -> (Mobile_device) relationships edges
 MATCH (p:Person)
 MATCH (ll:LandLine_number)
-WHERE p.idNumber = ll.idNumber
+WHERE p.pps = ll.pps
 MERGE (p)-[:HAVE_LANDLINE_NUMBER]->(ll);
 
 // Create (Corporate) -> ["LANDLINE_NUMBER_IS_USED_BY"] -> (Person) relationships edges
 MATCH (ll:LandLine_number)
 MATCH (p:Person)
-WHERE ll.idNumber = p.idNumber
+WHERE ll.pps = p.pps
 MERGE (ll)-[:LANDLINE_NUMBER_IS_USED_BY]->(p);
 
 

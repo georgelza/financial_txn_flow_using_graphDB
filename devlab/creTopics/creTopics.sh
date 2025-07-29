@@ -50,7 +50,7 @@ docker compose exec broker kafka-topics \
     2>/dev/null
 
 
-# Transactions / Edges
+# AccountEvents / Edges
 docker compose exec broker kafka-topics \
     --create -topic ob_txn \
     --bootstrap-server localhost:9092 \

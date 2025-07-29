@@ -21,13 +21,12 @@
 //
 // Some alternative organizational approaches you might consider for your database:
 //
-//  Economic/Regional Blocks: EU, ASEAN, NAFTA/USMCA, African Union, etc.
-//  UN Regional Groups: Africa, Asia-Pacific, Eastern Europe, Latin America & Caribbean, Western Europe & Others
-//  Cultural/Linguistic: Francophone, Anglophone, Arabic-speaking, etc.
+//  Economic/Regional Blocks:   EU, ASEAN, NAFTA/USMCA, African Union, etc.
+//  UN Regional Groups:         Africa, Asia-Pacific, Eastern Europe, Latin America & Caribbean, Western Europe & Others
+//  Cultural/Linguistic:        Francophone, Anglophone, Arabic-speaking, etc.
 //  Development Classification: Developed, Developing, Least Developed Countries
 
 
-// Create Continent nodes for Neo4j
 MERGE (c:Continent {name: "Africa"}) 
 ON CREATE SET c = { 
     name: "Africa", 

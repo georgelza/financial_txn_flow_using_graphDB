@@ -20,7 +20,7 @@ Define Nodes:
   - Mobile Devices
   - Landline Numbers
   - Address
-  - Transactions
+  - AccountEvents
     - Inbound
     - Outbound
   - continents
@@ -48,11 +48,11 @@ Create basic edges:
 
   
   - outbound
-    - (ob Account) -> [Paid_Funds_To] -> (ob Transactions) ob Txn represented as a node
+    - (ob Account) -> [Paid_Funds_To] -> (ob AccountEvents) ob Txn represented as a node
     - (ob Transaction) -> [Paid_Funds_To] ->  (ib Account)
 
   - inbound
-    - (ib Account) -> [Received_Funds_To] -> (ib Transactions) ib Txn represented as a node
+    - (ib Account) -> [Received_Funds_To] -> (ib AccountEvents) ib Txn represented as a node
     - (ib Transaction) -> [Received_Funds_To] ->  (ib Account)
 
   - (ob Txn) -> [Same_Transaction] -> (ib Txn)  This is based on same ob_txn.transactionId = ib_txn.transactionId and ob_txn.direction = "outbound" and ib_txn.direction = "inbound"  (otherwise we might link it to itself).
@@ -60,18 +60,18 @@ Create basic edges:
 
 ### Additional Data Products required
 
-1. Banks provide (if individual) accountEntityId => idNumber
+1. Banks provide (if individual) accountEntityId => pps
 2. Banks provide (if corporate) accountEntityId => regId
-3. CIPC provide regId => Company Owners/idNumbers
-4. DOHA idNumber => Personal records, name, surname, sex, dob, ...
+3. CIPC provide regId => Company Owners/ppss
+4. DOHA pps => Personal records, name, surname, sex, dob, ...
 
-5. Possible (stretching wishes), Mobile Telco's Operators provide idNumber => mobiledevice_number
-6. Reported Fraud provide know offenders and known victim idNumbers.
+5. Possible (stretching wishes), Mobile Telco's Operators provide pps => mobiledevice_number
+6. Reported Fraud provide know offenders and known victim ppss.
 
 
 ### Phase 3
 
-Figure out how to introduce temporal concepts between Account Events (for now it will be on inbound and outbound transactions only), linking one to next in a chain, think link list, also allowing n+1 to reference. Basically creating a time travel chain of events for the account.
+Figure out how to introduce temporal concepts between Account Events (for now it will be on inbound and outbound AccountEvents only), linking one to next in a chain, think link list, also allowing n+1 to reference. Basically creating a time travel chain of events for the account.
 
 
 ### Kafka Connect Sinks
@@ -90,9 +90,9 @@ Time To add...
 
 
 ## References
+  
 
-
-- [Transaction and Account Data Model](https://neo4j.com/developer/industry-use-cases/data-models/transactions/transactions-base-model/?_gl=1*d43n9l*_gcl_au*MTc2MjA3MzA3NS4xNzUzMjY3Mzc5*_ga*NzU1MTc3ODQwLjE3NTMyNjczNzk.*_ga_DL38Q8KGQC*czE3NTMyNjczNzkkbzEkZzEkdDE3NTMyNzM2MzIkajYwJGwwJGgw*_ga_DZP8Z65KK4*czE3NTMyNjczNzkkbzEkZzEkdDE3NTMyNzM2MzIkajYwJGwwJGgw)
+- [Transaction and Account Data Model](https://neo4j.com/developer/industry-use-cases/data-models/AccountEvents/AccountEvents-base-model/?_gl=1*d43n9l*_gcl_au*MTc2MjA3MzA3NS4xNzUzMjY3Mzc5*_ga*NzU1MTc3ODQwLjE3NTMyNjczNzk.*_ga_DL38Q8KGQC*czE3NTMyNjczNzkkbzEkZzEkdDE3NTMyNzM2MzIkajYwJGwwJGgw*_ga_DZP8Z65KK4*czE3NTMyNjczNzkkbzEkZzEkdDE3NTMyNzM2MzIkajYwJGwwJGgw)
 
 
 - [Mastering Fraud Detection With Temporal Graph Modeling](https://neo4j.com/blog/developer/mastering-fraud-detection-temporal-graph/)
