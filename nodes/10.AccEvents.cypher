@@ -123,7 +123,7 @@ ON CREATE SET n = {
 RETURN n;
 
 
-// Transaction 5 - 2299405743564352941
+// Transaction 4 - 2299405743564352941
 // Outbound
 MERGE (n:AccountEvents {eventId: "9265405743564350485"})
 ON CREATE SET n = {
@@ -164,7 +164,7 @@ ON CREATE SET n = {
 RETURN n;
 
 
-// Transaction 6 - 2299405743564362941
+// Transaction 5 - 2299405743564362941
 // Outbound
 MERGE (n:AccountEvents {eventId: "9265405743564352485"})
 ON CREATE SET n = {
@@ -205,7 +205,7 @@ ON CREATE SET n = {
 RETURN n;
 
 
-// Transaction 7 - 2239405743564352951
+// Transaction 6 - 2239405743564352951
 // Outbound
 MERGE (n:AccountEvents {eventId: "9265425743564350485"})
 ON CREATE SET n = {
@@ -246,7 +246,7 @@ ON CREATE SET n = {
 RETURN n;
 
 
-// Transaction 8 - 2299405743564352955
+// Transaction 7 - 2299405743564352955
 // Outbound
 MERGE (n:AccountEvents {eventId: "9265405743564350490"})
 ON CREATE SET n = {
@@ -287,7 +287,7 @@ ON CREATE SET n = {
 RETURN n;
 
 
-// Transaction 9 - 2299405743564352973
+// Transaction 8 - 2299405743564352973
 // Outbound
 MERGE (n:AccountEvents {eventId: "9265405743564350494"})
 ON CREATE SET n = {
@@ -328,7 +328,7 @@ ON CREATE SET n = {
 RETURN n;
 
 
-// Transaction 10 - 2299405743564352974
+// Transaction 9 - 2299405743564352974 XXX
 // Outbound
 MERGE (n:AccountEvents {eventId: "9265405743564350496"})
 ON CREATE SET n = {
@@ -369,7 +369,7 @@ ON CREATE SET n = {
 RETURN n;
 
 
-// Transaction 11 - 2299405743564352074
+// Transaction 10 - 2299405743564352074 XXX
 // Outbound
 MERGE (n:AccountEvents {eventId: "9265405743564350416"})
 ON CREATE SET n = {
@@ -451,7 +451,7 @@ ON CREATE SET n = {
 RETURN n;
 
 
-// Transaction 13 - 3299415743564352074
+// Transaction 12 - 3299415743564352074
 // Outbound
 MERGE (n:AccountEvents {eventId: "9365405743564351416"})
 ON CREATE SET n = {
@@ -492,7 +492,7 @@ ON CREATE SET n = {
 RETURN n;
 
 
-// Transaction 14 - 3299415743564352074
+// Transaction 13 - 3299415743564352071  PROBLEM
 // Outbound
 MERGE (n:AccountEvents {eventId: "9365405743564351419"})
 ON CREATE SET n = {
@@ -522,7 +522,7 @@ ON CREATE SET n = {
     eventTime: "21/07/2025 15:13:10",
     baseValue: 14907.00,
     currency: "EUR",
-    direction: "outbound",
+    direction: "inbound",
     localInstrument: "PBAC",
     settlementMethod: "CLRG",
     settlementClearingSystemCode: "RPP",
@@ -533,7 +533,7 @@ ON CREATE SET n = {
 RETURN n;
 
 
-// Transaction 15 - 3299415743564352075
+// Transaction 14 - 3299415743564352075
 // Outbound
 MERGE (n:AccountEvents {eventId: "9375405743564351416"})
 ON CREATE SET n = {
@@ -574,7 +574,7 @@ ON CREATE SET n = {
 RETURN n;
 
 
-// Transaction 16 - 3299415743564352175
+// Transaction 15 - 3299415743564352175
 // Outbound
 MERGE (n:AccountEvents {eventId: "9365405843564351416"})
 ON CREATE SET n = {
