@@ -1,5 +1,6 @@
 // Transaction 1 - 2299405743564352934
-// Outbound
+// Outbound    accountEntityId Paid counterpartyEntityId
+//
 MERGE (n:AccountEvents {eventId: "9265405743564350480"})
 ON CREATE SET n = {
     eventId: "9265405743564350480",
@@ -18,7 +19,8 @@ ON CREATE SET n = {
     riskStatus: "no-risk"
 }
 RETURN n;
-// Inbound
+// Inbound  accountEntityId recieved funds from counterpartyEntityId
+//
 MERGE (n:AccountEvents {eventId: "9265405743564350471"})
 ON CREATE SET n = {
     eventId: "9265405743564350471",
