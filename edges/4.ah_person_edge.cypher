@@ -1,10 +1,10 @@
 // Where they share the same pps
 
-// Create (AccountHolder) -> [MANAGED_BY]-> (Person) edge
+// Create (AccountHolder) -> [RESPONSIBLE_PARTY]-> (Person) edge
 MATCH (ah:AccountHolder)
 MATCH (p:Person)
 WHERE ah.pps = p.pps
-MERGE (ah)-[:MANAGED_BY]->(p);
+MERGE (ah)-[:RESPONSIBLE_PARTY]->(p);
 
 // Create (Person) -> [HAS_ACCOUNT]-> (AccountHolder) edge
 MATCH (p:Person)

@@ -1,10 +1,10 @@
 // Where they share the same regId
 
-// Create (AccountHolder) -> [MANAGED_BY]-> (Corporate) edge
+// Create (AccountHolder) -> [RESPONSIBLE_PARTY]-> (Corporate) edge
 MATCH (ah:AccountHolder)
 MATCH (cp:Corporate)
 WHERE ah.regId = cp.regId
-MERGE (ah)-[:MANAGED_BY]->(cp);
+MERGE (ah)-[:RESPONSIBLE_PARTY]->(cp);
 
 // Create (Corporate) -> [HAS_ACCOUNT]-> (AccountHolder) edge
 MATCH (cp:Corporate)

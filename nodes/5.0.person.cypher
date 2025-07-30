@@ -137,7 +137,6 @@ ON CREATE SET n = {
     address: 3003
 }
 ON MATCH SET n += {
-    dob: "1972/12/24",
     address: 3003
 }
 RETURN n;
