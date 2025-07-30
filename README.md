@@ -42,11 +42,13 @@ Create basic edges:
   - Corporate ->      Landline Numbers
   - Address ->        Person
   - Address ->        Corporate
-  - Country ->        Continent
-  - Country ->        Classification's
-  - Address ->        Country
+  
+  - Country ->        Continent         -> Added files, have not coded import or edges
+  - Country ->        Classification's  -> Added files, have not coded import or edges
+  - Address ->        Country           -> Added files, have not coded import or edges
 
-  Account Events -> NOT IMPLIMENTED AT THE MOMENT.
+
+accountEvents -> IN PROGRESS !!!!!
 
   - outbound
     - (ob Account) -> [Paid_Funds_To] -> (ob AccountEvents) ob Txn represented as a node
@@ -56,7 +58,13 @@ Create basic edges:
     - (ib Account) -> [Received_Funds_To] -> (ib AccountEvents) ib Txn represented as a node
     - (ib Transaction) -> [Received_Funds_To] ->  (ib Account)
 
-  - (ob Txn) -> [Same_Transaction] -> (ib Txn)  This is based on same ob_txn.transactionId = ib_txn.transactionId and ob_txn.direction = "outbound" and ib_txn.direction = "inbound"  (otherwise we might link it to itself).
+  - (ob Txn) -> [Same_TxnEvent] -> (ib Txn)  This is based on same ob_txn.transactionId = ib_txn.transactionId and ob_txn.direction = "outbound" and ib_txn.direction = "inbound"  (otherwise we might link it to itself).
+    - We will replcate this pattern on Corporate, Person, address, mobileDevice, Landline nodes to show changes over time.
+
+
+### Phase 3 - TO BE DONE
+
+Figure out how to introduce temporal concepts between Account Events (for now it will be on inbound and outbound AccountEvents only), linking one to next in a chain, think link list, also allowing n+1 to reference. Basically creating a time travel chain of events for the account.
 
 
 ### Additional Data Products required
@@ -68,11 +76,6 @@ Create basic edges:
 
 5. Possible (stretching wishes), Mobile Telco's Operators provide pps => mobiledevice_number
 6. Reported Fraud provide know offenders and known victim ppss.
-
-
-### Phase 3
-
-Figure out how to introduce temporal concepts between Account Events (for now it will be on inbound and outbound AccountEvents only), linking one to next in a chain, think link list, also allowing n+1 to reference. Basically creating a time travel chain of events for the account.
 
 
 ### Kafka Connect Sinks
