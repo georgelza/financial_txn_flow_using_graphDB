@@ -2,23 +2,32 @@
 //
 // Some Irish Name/Surname combinations.
 //
-// Male Names (5):
+// Male Names (7):
 //
-// Seán O'Brien (classic Irish first name + common surname)
-// Cian Murphy (modern Irish name + very common surname)
-// Liam Kelly (popular name + widespread surname)
-// Oisín McCarthy (traditional Irish name + Cork/Munster surname)
-// Darragh Walsh (contemporary Irish name + common surname)
+// Seán O'Brien     (classic Irish first name + common surname)
+// Cian Murphy      (modern Irish name + very common surname)
+// Liam Kelly       (popular name + widespread surname)
+// Oisín McCarthy   (traditional Irish name + Cork/Munster surname)
+// Darragh Walsh    (contemporary Irish name + common surname)
+// Conor Byrne      (very popular Irish name + Dublin/Leinster surname)
+// Padraig O'Connor (traditional Irish name + widespread surname)
 
 // Female Names (3):
 //
-// Siobhán O'Sullivan (classic Irish name + common Kerry/Cork surname)
-// Aoife Ryan (very popular modern Irish name + common surname)
-// Niamh Fitzgerald (traditional Irish name + Norman-Irish surname)
+// Siobhán O'Sullivan   (classic Irish name + common Kerry/Cork surname)
+// Aoife Ryan           (very popular modern Irish name + common surname)
+// Niamh Fitzgerald     (traditional Irish name + Norman-Irish surname)
 
 // Notes:
 //
-// Pronunciation guide: Siobhán (shi-VAWN), Aoife (EE-fa), Niamh (NEE-av), Cian (KEE-an), Oisín (oh-SHEEN)
+// Pronunciation guide: 
+//  Padraig: (PAW-drig) is the Irish form of Patrick
+//  Siobhán (shi-VAWN), 
+//  Aoife (EE-fa), 
+//  Niamh (NEE-av), 
+//  Cian (KEE-an), 
+//  Oisín (oh-SHEEN)
+//
 // These surnames are among the most common in Ireland
 // The names mix traditional Gaelic names with anglicized versions
 // All are authentic Irish names you'd commonly find in Limerick County and throughout Ireland
