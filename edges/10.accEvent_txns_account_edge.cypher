@@ -14,9 +14,9 @@ MERGE (acc)-[:PAID_FUNDS_TO]->(ae);
 
 // Create (Account) -> ["RECEIVED_FUNDS_FROM"] -> (AccountEvents) relationships edges
 // Inbound
-MATCH (ae:AccountEvents)
 MATCH (acc:Account)
-WHERE ae.counterpartyEntityId = acc.accountEntityId and ae.direction = "inbound"
+MATCH (ae:AccountEvents)
+WHERE acc.accountEntityId = ae.accountEntityId and ae.direction = "inbound"
 MERGE (acc)-[:RECEIVED_FUNDS_FROM]->(ae);
 
 
