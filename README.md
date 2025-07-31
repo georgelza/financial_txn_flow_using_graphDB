@@ -1,5 +1,9 @@
 ## Financial Transaction Flow 
 
+Our little exploration into the world of GraphDB's and how they defined objects/nodes/records and then create edges/links/relationships between them.
+
+See []() for the associated Blog article.
+
 
 ### Phase 1
 
@@ -8,16 +12,18 @@ Define Nodes:
   - Banks
   - Accounts
   - AccountHolders
-  - Person
-  - Corporate
+  - Corporate's
+  - Person's
+- 
   - Mobile Devices
   - Landline Numbers
   - Address
 
-  - AccountEvents
+  - AccountEvents (transactions)
     - Inbound
     - Outbound
 
+I've also added mappings defining nodes for continents and countries, and then muldiple edge models as per classifications.
   - continents
   - Countries
     - Africa
@@ -27,6 +33,7 @@ Define Nodes:
     - South America
     - Oceana
   - classifications
+
 
 ### Phase 2
 
@@ -42,24 +49,23 @@ Create basic edges:
   - Corporate ->      Landline Numbers
   - Address ->        Person
   - Address ->        Corporate
+  - accEvent ->       Account
+    - As a outbound and inbound edge.
   
   - Country ->        Continent         -> Added files, have not coded import or edges
   - Country ->        Classification's  -> Added files, have not coded import or edges
   - Address ->        Country           -> Added files, have not coded import or edges
 
-
-accountEvents -> IN PROGRESS !!!!!
+As far as accountEvents -> is concerned, see blog-doc/diagrams/Account_accountEvent_Account_edge.png for a depiction how this has been modelled.
 
   - outbound
-    - (ob Account) -> [Paid_Funds_To] -> (ob AccountEvents) ob Txn represented as a node
-    - (ob Transaction) -> [Paid_Funds_To] ->  (ib Account)
+    - (ob Account) -> [Paid_Funds_To] -> (ob AccountEvents) the outbound transaction is modelled as a node
 
   - inbound
-    - (ib Account) -> [Received_Funds_To] -> (ib AccountEvents) ib Txn represented as a node
-    - (ib Transaction) -> [Received_Funds_To] ->  (ib Account)
+    - (ib Account) <- [Received_Funds_To] - (ib AccountEvents) the inbound transaction is also modelled as a node
 
-  - (ob Txn) -> [Same_TxnEvent] -> (ib Txn)  This is based on same ob_txn.transactionId = ib_txn.transactionId and ob_txn.direction = "outbound" and ib_txn.direction = "inbound"  (otherwise we might link it to itself).
-    - We will replcate this pattern on Corporate, Person, address, mobileDevice, Landline nodes to show changes over time.
+  - (ob AccountEvents) -> [Same_TxnEvent] -> (ib AccountEvents)  Here we now associated the ob accountEvent with the ib accountEvent based on them having the same transactionId.
+    - This is done as a edge for both directions.
 
 
 ### Phase 3 - TO BE DONE
@@ -80,7 +86,7 @@ Figure out how to introduce temporal concepts between Account Events (for now it
 
 ### Kafka Connect Sinks
 
-Time To add... 
+This will be a seperate Blog. Will update this section with the link to the GIT repo once completed.
 
 
 ### To run

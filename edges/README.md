@@ -9,5 +9,6 @@
 - 6.mobiledevice_edge.cypher
 - 7.landline_number_edge.cypher
 - 8.address_edge.cypher
-- xxx.txn_account_edge.cypher
-- xxx.txn_event_event_edge.cypher
+- 9.country_classification.cypher
+- 10.accEvent_txn_account_edge.cypher
+- 11.temporal_edge.cypher

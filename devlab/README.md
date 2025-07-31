@@ -9,7 +9,7 @@ To do that :
 - `make pullall`
 - `cd connect`
 - `make build`
+- `cd ..`
+- `make run`
 
-Then come back here and `make run`.
-
-At this point you can changed directory into nodes and follow the instructions in `README.md`.
+At this point you can changed directory into nodes and follow the instructions in `README.md`, followed by `cd edges` and following the `README.md`.
