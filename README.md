@@ -4,6 +4,7 @@ Our little exploration into the world of GraphDB's and how they defined objects/
 
 See []() for the associated Blog article.
 
+GIT Repo: [financial_txn_flow_using_graphDB](https://github.com/georgelza/financial_txn_flow_using_graphDB)
 
 ### Phase 1
 
