@@ -1,4 +1,1 @@
-//
-//  Temporarl/Time based linking of accountEvents to previous
-//
-//
+//  Temporarl/Time based linking of accountEvents to previous. To be completed.

@@ -1,10 +1,4 @@
 
-//
-//
-//      This is not complete, still issues!!!
-//
-//
-
 // Create (AccountEvents) -> ["PAID_FUNDS_TO"] -> (Account) relationships edges
 // Outbound
 MATCH (acc:Account)
@@ -30,11 +24,3 @@ MATCH (ib:AccountEvents)
 MATCH (ob:AccountEvents)
 WHERE ib.transactionID = ob.transactionID and ib.direction="inbound" and ob.direction="outbound"
 MERGE (ib)-[:SAME_TXN_EVENT]->(ob);
-
-// contains
-// (Account) -> [contains] -> (Account_Event)
-// .accountEntityID  = . accountEntityID
-//MATCH (acc:Account)
-//MATCH (txn:AccountEvents)
-//WHERE acc.accountEntityId = txn.accountEntityId
-//MERGE (acc)-[:RECEIVED_FUNDS_FROM]->(txn);

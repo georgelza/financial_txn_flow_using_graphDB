@@ -34,7 +34,6 @@
 
 // Bank 1
 // Setting a value to null removes the tag.
-// Previous Tempo Martin
 MERGE (n:Person {pps: "1234567A"})
 ON CREATE SET n = {
     pps: "1234567A",
@@ -48,7 +47,6 @@ ON MATCH SET n += {
 }
 RETURN n;
 
-// Previous Tony Stewart
 MERGE (n:Person { pps: "2847639B"})
 ON CREATE SET n = {
     pps: "2847639B",
@@ -62,7 +60,6 @@ ON MATCH SET n+= {
 }
 RETURN n;
 
-// Previous Martin Maree
 MERGE (n:Person { pps: "3519274C"})
 ON CREATE SET n = {
     pps: "3519274C",
@@ -78,7 +75,6 @@ RETURN n;
 
 // Corporate
 // AeroMat
-// Previous Guy Miles
 MERGE (n:Person { pps: "4682851D"})
 ON CREATE SET n = {
     pps: "4682851D",
@@ -95,7 +91,6 @@ RETURN n;
 
 // Corporate
 // AeroMat
-// Previous Martin Sweenie
 MERGE (n:Person {pps: "5746392E"})
 ON CREATE SET n = {
     pps: "5746392E",
@@ -110,7 +105,6 @@ ON MATCH SET n += {
 }
 RETURN n;
 
-// Previous Alex Human
 MERGE (n:Person {pps: "6283947F"})
 ON CREATE SET n = {
     pps: "6283947F",
@@ -124,7 +118,6 @@ ON MATCH SET n += {
 }
 RETURN n;
 
-// Previous Andrew Muller
 MERGE (n:Person {pps: "7395168G"})
 ON CREATE SET n = {
     pps: "7395168G",
@@ -138,7 +131,6 @@ ON MATCH SET n += {
 }
 RETURN n;
 
-// Previous Kevin Pretorius
 MERGE (n:Person {pps: "8461725H"})
 ON CREATE SET n = {
     pps: "8461725H",
@@ -168,7 +160,6 @@ ON MATCH SET n += {
 }
 RETURN n;
 
-// Previous Karen Henwood
 MERGE (n:Person {pps: "9572840J"})
 ON CREATE SET n = {
     pps: "9572840J",

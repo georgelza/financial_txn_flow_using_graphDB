@@ -26,7 +26,7 @@ RETURN n;
 MERGE (n:Corporate {regId: "1987/0401/1785"})
 ON CREATE SET n = {
     regId: "1987/0401/1785",
-    corpName: "Joe's Workshop",
+    corpName: "TopSpec's Workshop",
     estDate: "1987/04/2035"
 }
 ON MATCH SET n += {
