@@ -9,8 +9,7 @@ Shell script (creTopics.sh) to create topic...
 - person
 - mobile_devices
 - landlines_numbers
-- ib_txn
-- ob_txn
+- accountEvents
 - err_payload
 - full_payload
 

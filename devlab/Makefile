@@ -47,7 +47,7 @@ cypher:
 	docker compose exec --interactive --tty neo4j cypher-shell -u ${NEO4J_USERNAME} -p ${NEO4J_PASSWORD}
 
 
-# This will create supporting constraints
+# This will/can create supporting constraints
 constraints:
 	docker compose exec --interactive --tty neo4j cypher-shell -u ${NEO4J_USERNAME} -p ${NEO4J_PASSWORD} -f /connect/constraints.cypher
 
