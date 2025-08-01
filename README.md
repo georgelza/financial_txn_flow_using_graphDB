@@ -2,9 +2,10 @@
 
 Our little exploration into the world of GraphDB's and how they defined objects/nodes/records and then create edges/links/relationships between them.
 
-See []() for the associated Blog article.
-
 GIT Repo: [financial_txn_flow_using_graphDB - part 1](https://github.com/georgelza/financial_txn_flow_using_graphDB-part1)
+
+See [Fraud Analytics using a different approach, GraphDB data platform (part 1)](https://medium.com/@georgelza/fraud-analytics-using-a-different-approach-graphdb-data-platform-part-1-807c68d03bff) for the associated Blog article on Medium.
+
 
 ### Phase 1
 
