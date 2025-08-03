@@ -1,11 +1,11 @@
-// Unique Constraint on AccountHolder.accountEntityId
+// Unique Constraint on AccountHolder.accountServiceId
 //
 //  NOT a Connect job but part of scafolwing, Will need to create some indexes to help things along
 //
 //
-CREATE CONSTRAINT acc_node_accountEntityId_uidx IF NOT EXISTS
+CREATE CONSTRAINT acc_node_accountServiceId_uidx IF NOT EXISTS
 FOR (a:Account) 
-REQUIRE a.accountEntityId IS UNIQUE;
+REQUIRE a.accountServiceId IS UNIQUE;
 
 CREATE CONSTRAINT person_node_pps_uidx IF NOT EXISTS
 FOR (a:Person) 
@@ -15,32 +15,32 @@ CREATE CONSTRAINT corp_node_RegId_uidx IF NOT EXISTS
 FOR (a:Corporate) 
 REQUIRE a.RegId IS UNIQUE;
 
-// Standard Index for Bank.tenantId -> For now this not unique as the same tenantId can exist on multiple records based on dif branch start end codes
+// Standard Index for Bank.serviceId -> For now this not unique as the same serviceId can exist on multiple records based on dif branch start end codes
 //
 
-CREATE INDEX corp_node_accountEntityId_idx IF NOT EXISTS
+CREATE INDEX corp_node_accountServiceId_idx IF NOT EXISTS
 FOR (b:Corporate) 
-ON b.accountEntityId;
+ON b.accountServiceId;
 
-CREATE INDEX person_node_accountEntityId_idx IF NOT EXISTS
+CREATE INDEX person_node_accountServiceId_idx IF NOT EXISTS
 FOR (b:Person) 
-ON b.accountEntityId;
+ON b.accountServiceId;
 
-CREATE INDEX person_node_accountEntityId_idx IF NOT EXISTS
+CREATE INDEX person_node_accountServiceId_idx IF NOT EXISTS
 FOR (b:Person) 
-ON b.accountEntityId;
+ON b.accountServiceId;
 
-CREATE INDEX bank_node_tenantId_idx IF NOT EXISTS
+CREATE INDEX bank_node_serviceId_idx IF NOT EXISTS
 FOR (b:Bank) 
-ON b.tenantId;
+ON b.serviceId;
 
-// Standard Index for AccountHolder.tenantId -> Used by AH -> Bank  and Bank -> AH edge
+// Standard Index for AccountHolder.serviceId -> Used by AH -> Bank  and Bank -> AH edge
 //
-CREATE INDEX ah_tenantid_idx IF NOT EXISTS
+CREATE INDEX ah_serviceId_idx IF NOT EXISTS
 FOR (a:AccountHolder) 
-ON (a.tenantId);
+ON (a.serviceId);
 
-// Used by ah1.accountEntityId->txn->ah2.counterpartyEntityId edge
+// Used by ah1.accountServiceId->txn->ah2.counterpartyEntityId edge
 CREATE INDEX ah_counterpartyEntityId_idx IF NOT EXISTS
 FOR (a:AccountHolder) 
 ON (a.counterpartyEntityId);
@@ -63,15 +63,15 @@ REQUIRE r.eventId IS UNIQUE;
 CREATE INDEX transaction_id_index 
 FOR (n:Transaction) ON (n.transactionId);
 
-// 3. Index on AccountHolder.accountEntityId
+// 3. Index on AccountHolder.accountServiceId
 // Primary key for account lookups and merging
 CREATE INDEX account_entity_index 
-FOR (n:AccountHolder) ON (n.accountEntityId);
+FOR (n:AccountHolder) ON (n.accountServiceId);
 
-// 4. Index on AccountHolder.tenantId
+// 4. Index on AccountHolder.serviceId
 // For tenant-based filtering and queries
 CREATE INDEX tenant_id_index 
-FOR (n:AccountHolder) ON (n.tenantId);
+FOR (n:AccountHolder) ON (n.serviceId);
 
 // 5. Index on AccountHolder.bicfi
 // For bank code lookups

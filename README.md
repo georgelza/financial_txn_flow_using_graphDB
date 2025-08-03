@@ -77,8 +77,8 @@ Figure out how to introduce temporal concepts between Account Events (for now it
 
 ### Additional Data Products required
 
-1. Banks provide (if individual) accountEntityId => pps
-2. Banks provide (if corporate) accountEntityId => regId
+1. Banks provide (if individual) accountServiceId => pps
+2. Banks provide (if corporate) accountServiceId => regId
 3. National Business Registry provide regId => Company Owners/ppss
 4. National Department of Home Affairs/Home Office provide pps => Personal records, name, surname, sex, dob, ...
 
